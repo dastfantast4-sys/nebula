@@ -2,16 +2,16 @@
    NEBULA — дизайн-система (тёмно-зелёная тема)
    ============================================ */
 :root {
-    --bg: #0a0f0c;
-    --card-bg: rgba(18, 28, 22, 0.78);
-    --card-solid: #121c16;
-    --accent: #2d8a5e;
-    --accent-soft: rgba(45, 138, 94, 0.18);
-    --accent-bright: #3cb371;
-    --text: #e8f0ea;
-    --text-dim: #7a9a88;
-    --border: rgba(255, 255, 255, 0.05);
-    --border-strong: rgba(255, 255, 255, 0.10);
+    --bg: #0c0c12;
+    --card-bg: rgba(24, 24, 37, 0.72);
+    --card-solid: #181825;
+    --accent: #7c3aed;
+    --accent-soft: rgba(124, 58, 237, 0.16);
+    --accent-bright: #8b5cf6;
+    --text: #f1f1f6;
+    --text-dim: #8a8a9e;
+    --border: rgba(255, 255, 255, 0.06);
+    --border-strong: rgba(255, 255, 255, 0.12);
     --ease: cubic-bezier(0.4, 0, 0.2, 1);
     --radius-lg: 20px;
     --radius-md: 12px;
@@ -47,8 +47,8 @@ body::before {
     inset: 0;
     pointer-events: none;
     background:
-        radial-gradient(60% 40% at 85% 110%, rgba(45, 138, 94, 0.12), transparent 70%),
-        radial-gradient(50% 35% at 8% -5%, rgba(45, 138, 94, 0.08), transparent 70%);
+        radial-gradient(60% 40% at 85% 110%, rgba(124, 58, 237, 0.10), transparent 70%),
+        radial-gradient(50% 35% at 8% -5%, rgba(124, 58, 237, 0.07), transparent 70%);
     z-index: 0;
 }
 
@@ -76,14 +76,14 @@ button {
     z-index: 50;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    background: rgba(10, 15, 12, 0.75);
+    background: rgba(12, 12, 18, 0.72);
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
 }
 
 .header--scrolled {
     border-bottom-color: var(--border);
-    background: rgba(10, 15, 12, 0.9);
+    background: rgba(12, 12, 18, 0.88);
 }
 
 .header__inner {
@@ -213,7 +213,7 @@ button {
     top: 72px;
     z-index: 40;
     padding: 16px 0 8px;
-    background: rgba(10, 15, 12, 0.82);
+    background: rgba(12, 12, 18, 0.82);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 }
@@ -396,7 +396,7 @@ button {
     overflow: hidden;
     border-radius: var(--radius-md);
     aspect-ratio: 1 / 1;
-    background: #0e1610;
+    background: #10101a;
 }
 
 .product-card__media img {
@@ -417,7 +417,7 @@ button {
     left: 10px;
     padding: 4px 10px;
     border-radius: var(--radius-pill);
-    background: rgba(10, 15, 12, 0.75);
+    background: rgba(12, 12, 18, 0.72);
     backdrop-filter: blur(6px);
     font-size: 0.7rem;
     letter-spacing: 0.06em;
@@ -478,7 +478,7 @@ button {
 }
 
 .add-to-cart:hover:not(:disabled) {
-    background: #247a4e;
+    background: #6d28d9;
     transform: translateY(-1px);
 }
 
@@ -534,7 +534,7 @@ button {
 }
 
 .btn-primary:hover {
-    background: #247a4e;
+    background: #6d28d9;
 }
 
 .btn-ghost {
@@ -570,7 +570,7 @@ button {
 .product-modal__overlay {
     position: absolute;
     inset: 0;
-    background: rgba(5, 10, 7, 0.75);
+    background: rgba(5, 5, 10, 0.75);
     backdrop-filter: blur(8px);
     cursor: pointer;
 }
@@ -601,7 +601,7 @@ button {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: var(--radius-lg) 0 0 var(--radius-lg);
-    background: #0e1610;
+    background: #10101a;
 }
 
 .product-modal__media img {
@@ -687,7 +687,7 @@ button {
     height: 40px;
     border-radius: 50%;
     border: 1px solid var(--border);
-    background: rgba(18, 28, 22, 0.9);
+    background: rgba(24, 24, 37, 0.9);
     color: var(--text);
     cursor: pointer;
     display: flex;
@@ -714,7 +714,7 @@ button {
     right: 0;
     width: min(420px, 100vw);
     height: 100dvh;
-    background: #0f1812;
+    background: #12121c;
     border-left: 1px solid var(--border);
     z-index: 100;
     display: flex;
@@ -870,7 +870,7 @@ button {
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(5, 10, 7, 0.6);
+    background: rgba(5, 5, 10, 0.6);
     backdrop-filter: blur(3px);
     z-index: 90;
     opacity: 0;
@@ -899,7 +899,7 @@ button {
     bottom: 32px;
     left: 50%;
     transform: translate(-50%, 20px);
-    background: #141e18;
+    background: #1c1c2b;
     border: 1px solid var(--accent);
     color: var(--text);
     padding: 14px 28px;
@@ -947,12 +947,12 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1e2e22;
+    background: #2a2a3c;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #2a4030;
+    background: #3a3a52;
 }
 
 /* ============ Адаптив ============ */
